@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_fields_input_with_increments",
+  "info": {
+    "displayName": "Input With Increments",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "componentRender": {
+      "type": "string",
+      "default": "inputWithIncrements",
+      "private": true
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "max": {
+      "type": "integer"
+    },
+    "min": {
+      "type": "integer"
+    },
+    "step": {
+      "type": "integer"
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "suggestion": {
+      "type": "text"
+    },
+    "instructions": {
+      "type": "text"
+    },
+    "pattern": {
+      "type": "text"
+    },
+    "increments": {
+      "displayName": "increment",
+      "type": "component",
+      "repeatable": true,
+      "component": "fields.increment"
+    },
+    "validationRules": {
+      "displayName": "validation",
+      "type": "component",
+      "repeatable": true,
+      "component": "fields.validation"
+    },
+    "type": {
+      "type": "string",
+      "default": "number",
+      "private": true
+    }
+  }
+}

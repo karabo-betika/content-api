@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_fields_increments",
+  "info": {
+    "displayName": "increment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer"
+    }
+  }
+}

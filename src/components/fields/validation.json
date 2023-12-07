@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_fields_validations",
+  "info": {
+    "displayName": "validation"
+  },
+  "options": {},
+  "attributes": {
+    "message": {
+      "type": "text"
+    },
+    "pattern": {
+      "type": "text"
+    }
+  }
+}

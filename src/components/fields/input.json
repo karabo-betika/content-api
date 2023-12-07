@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_fields_inputs",
+  "info": {
+    "displayName": "input",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "tel",
+        "password",
+        "checkbox",
+        "text"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "disabled": {
+      "type": "boolean"
+    },
+    "placeholder": {
+      "type": "text"
+    },
+    "defaultValue": {
+      "type": "enumeration",
+      "enum": [
+        "mobile"
+      ]
+    },
+    "validationRules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "fields.validation"
+    },
+    "componentRender": {
+      "type": "enumeration",
+      "enum": [
+        "button",
+        "checkbox",
+        "input"
+      ],
+      "required": true
+    }
+  }
+}

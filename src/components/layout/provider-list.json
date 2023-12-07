@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_provider_lists",
+  "info": {
+    "displayName": "Provider List",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "providers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::provider.provider"
+    }
+  }
+}
