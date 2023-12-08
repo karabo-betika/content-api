@@ -677,12 +677,43 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
+export interface ApiErrorError extends Schema.CollectionType {
+  collectionName: 'errors';
+  info: {
+    singularName: 'error';
+    pluralName: 'errors';
+    displayName: 'Error';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    code: Attribute.String;
+    message: Attribute.Text;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::error.error',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::error.error',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPagePage extends Schema.CollectionType {
   collectionName: 'pages';
   info: {
     singularName: 'page';
     pluralName: 'pages';
-    displayName: 'page';
+    displayName: 'Page';
     description: '';
   };
   options: {
@@ -751,6 +782,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
+      'api::error.error': ApiErrorError;
       'api::page.page': ApiPagePage;
       'api::provider.provider': ApiProviderProvider;
     }
