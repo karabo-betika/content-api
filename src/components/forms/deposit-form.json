@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_forms_deposit_forms",
+  "info": {
+    "displayName": "Deposit Form"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    }
+  }
+}

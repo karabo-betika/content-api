@@ -2,7 +2,8 @@
   "collectionName": "components_layout_provider_lists",
   "info": {
     "displayName": "Provider List",
-    "description": ""
+    "description": "",
+    "icon": "feather"
   },
   "options": {},
   "attributes": {

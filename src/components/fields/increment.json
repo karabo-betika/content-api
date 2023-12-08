@@ -2,7 +2,8 @@
   "collectionName": "components_fields_increments",
   "info": {
     "displayName": "increment",
-    "description": ""
+    "description": "",
+    "icon": "plus"
   },
   "options": {},
   "attributes": {

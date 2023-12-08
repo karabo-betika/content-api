@@ -1,7 +1,9 @@
 {
   "collectionName": "components_fields_validations",
   "info": {
-    "displayName": "validation"
+    "displayName": "validation",
+    "icon": "feather",
+    "description": ""
   },
   "options": {},
   "attributes": {

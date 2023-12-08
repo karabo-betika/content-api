@@ -5,6 +5,7 @@ export interface FieldsIncrement extends Schema.Component {
   info: {
     displayName: 'increment';
     description: '';
+    icon: 'plus';
   };
   attributes: {
     label: Attribute.String;
@@ -17,6 +18,7 @@ export interface FieldsInputWithIncrements extends Schema.Component {
   info: {
     displayName: 'Input With Increments';
     description: '';
+    icon: 'arrowUp';
   };
   attributes: {
     label: Attribute.String;
@@ -44,6 +46,7 @@ export interface FieldsInput extends Schema.Component {
   info: {
     displayName: 'input';
     description: '';
+    icon: 'layer';
   };
   attributes: {
     type: Attribute.Enumeration<['tel', 'password', 'checkbox', 'text']>;
@@ -63,10 +66,34 @@ export interface FieldsValidation extends Schema.Component {
   collectionName: 'components_fields_validations';
   info: {
     displayName: 'validation';
+    icon: 'feather';
+    description: '';
   };
   attributes: {
     message: Attribute.Text;
     pattern: Attribute.Text;
+  };
+}
+
+export interface FormsDepositForm extends Schema.Component {
+  collectionName: 'components_forms_deposit_forms';
+  info: {
+    displayName: 'Deposit Form';
+  };
+  attributes: {
+    title: Attribute.String;
+    content: Attribute.Blocks;
+  };
+}
+
+export interface FormsWithdrawalForm extends Schema.Component {
+  collectionName: 'components_forms_withdrawal_forms';
+  info: {
+    displayName: 'Withdrawal Form';
+  };
+  attributes: {
+    title: Attribute.String;
+    content: Attribute.Blocks;
   };
 }
 
@@ -75,6 +102,7 @@ export interface LayoutProviderList extends Schema.Component {
   info: {
     displayName: 'Provider List';
     description: '';
+    icon: 'feather';
   };
   attributes: {
     providers: Attribute.Relation<
@@ -104,6 +132,8 @@ declare module '@strapi/types' {
       'fields.input-with-increments': FieldsInputWithIncrements;
       'fields.input': FieldsInput;
       'fields.validation': FieldsValidation;
+      'forms.deposit-form': FormsDepositForm;
+      'forms.withdrawal-form': FormsWithdrawalForm;
       'layout.provider-list': LayoutProviderList;
       'seo.meta': SeoMeta;
     }

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_forms_withdrawal_forms",
+  "info": {
+    "displayName": "Withdrawal Form"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    }
+  }
+}
